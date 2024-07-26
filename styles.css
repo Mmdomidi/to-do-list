@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #55AD9B;
+    margin: 0;
+    padding: 0;
+    color: #FDDE55;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.container {
+    width: 50%; /* Set width to 50% of the viewport width */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #4535C1;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+#todo-form-container {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Ensure the form does not exceed container width */
+}
+
+#new-task, #new-category {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    flex: 1; /* Make the input fields take equal space */
+}
+
+button {
+    background-color: #478CCF;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Button specific styles */
+button.complete-btn {
+    background-color: #008a45;
+}
+
+button.delete-btn {
+    background-color: #ff1d33;
+}
+
+button.delete-btn:hover {
+    background-color: #5c0000;
+}
+
+button.edit-btn {
+    background-color: #ffcb30;
+}
+
+button.edit-btn:hover {
+    background-color: #ffbf00;
+}
+
+/* List styles */
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+#todo-list li span.task-text {
+    font-size: 16px;
+}
+
+/* Completed task styles */
+#todo-list li span.task-text.completed {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+
+/* Rating styles */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating span {
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.2s;
+    color: rgb(0, 0, 0);
+}
+
+.rating span.active {
+    color: rgb(255, 230, 0);
+}
+
+.rating span:hover {
+    transform: scale(1.2);
+}
+
+.rating span.inactive {
+    color: rgb(255, 255, 255);
+}
+
+/* Filter button styles */
+.filter-btn {
+    background-color: #ffffff;
+    color: #5a4b4b;
+    border: 1px solid #0080ff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.filter-btn:hover {
+    background-color: #000000;
+}
